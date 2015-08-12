@@ -9,7 +9,7 @@
     tools:context=".AboutActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/settingsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -18,11 +18,20 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="Version: TST 0.6"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/settingsTitle"
+        android:layout_below="@+id/settingsTitle"
         android:text="Created by: Anthony Laughlin"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -30,18 +39,9 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignLeft="@+id/settingsTitle"
         android:layout_below="@+id/textView2"
         android:text="Email: AJLYBF@mail.umkc.edu"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_below="@+id/textView3"
-        android:text="Version: TST 0.1"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView4"
         android:layout_below="@+id/textView4"
-        android:text="Date Uploaded: 2/22/2014"
+        android:text="Date Uploaded: 5/11/2014"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

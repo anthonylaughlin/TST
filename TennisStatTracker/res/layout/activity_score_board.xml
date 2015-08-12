@@ -9,7 +9,7 @@
     tools:context=".ScoreBoardActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/settingsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/action_scoreboard" />
@@ -215,5 +215,35 @@
         android:layout_centerHorizontal="true"
         android:text="You:Opp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/settingsTitle"
+        android:layout_below="@+id/win_button"
+        android:layout_marginTop="26dp"
+        android:text="How many sets? 1, 3, or 5: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/enter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/action_enter" />
 
 </RelativeLayout>
